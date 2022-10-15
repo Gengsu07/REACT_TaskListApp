@@ -1,0 +1,64 @@
+.btn {
+  border: none;
+  margin: 0 0.2rem;
+  width: 5rem;
+  height: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-green {
+  background: #00a44e;
+}
+
+.btn-red {
+  background: #ff2060;
+}
+
+.btn-add {
+  background: #089c99;
+}
+
+.btn-blue {
+  background: #218dfd;
+}
+
+.btn-green button {
+  border: none;
+  margin: 0 0.2rem;
+  width: 5rem;
+  height: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background: #00a44e;
+}
+
+.btn-red button {
+  border: none;
+  margin: 0 0.2rem;
+  width: 5rem;
+  height: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background: #ff2060;
+}
+
+.btn-blue button {
+  border: none;
+  margin: 0 0.2rem;
+  width: 5rem;
+  height: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background: #218dfd;
+}
+
+.btn-add button {
+  border: none;
+  margin: 0 0.2rem;
+  width: 5rem;
+  height: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background: #089c99;
+}

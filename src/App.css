@@ -1,0 +1,34 @@
+.app {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  height: 100vh;
+}
+
+.logo {
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.logo img {
+  width: 150px;
+  margin: 0;
+}
+
+.logo h3 {
+  color: #218dfd;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.forminput {
+  font-family: "Roboto";
+}
+
+.logo p {
+  font-family: fantasy;
+}
+
+.todo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
