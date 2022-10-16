@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ebe129c1fec113f1f86e",
-    "url": "/REACT_TaskListApp/static/css/main.b8bb05c1.chunk.css"
+    "revision": "6988302df6641a801039",
+    "url": "/REACT_TaskListApp/static/css/main.3f8dec9b.chunk.css"
   },
   {
-    "revision": "ebe129c1fec113f1f86e",
-    "url": "/REACT_TaskListApp/static/js/main.ebe129c1.chunk.js"
+    "revision": "6988302df6641a801039",
+    "url": "/REACT_TaskListApp/static/js/main.6988302d.chunk.js"
   },
   {
     "revision": "1c63107c4c12ea5ac037",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/REACT_TaskListApp/static/media/todolist.13ecfffd.png"
   },
   {
-    "revision": "336b592effec94689bec4f2a673049c0",
+    "revision": "8d4a8ad514d9f6e2c3c8aa1e72f357e5",
     "url": "/REACT_TaskListApp/index.html"
   }
 ];
