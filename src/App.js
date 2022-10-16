@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import FormInput from "./component/FormInput";
 import TodoList from "./component/ToDoList";
 import EditModal from "./component/EditModal";
+import DeleteModal from "./component/DeleteModal";
 
 class App extends Component {
   constructor() {
@@ -11,6 +12,8 @@ class App extends Component {
     this.state = {
       todo: [{ id: "", title: "" }],
       input: "",
+      isDelete: false,
+      idDelete: "",
       isEdited: false,
       EditData: {
         id: "",
@@ -48,11 +51,24 @@ class App extends Component {
   };
   ButtonDelete = (id) => {
     this.setState({
-      todo: this.state.todo.filter((item) => {
-        return item.id !== id;
-      }),
+      isDelete: true,
+      idDelete: id,
     });
   };
+  RemoveTask = () => {
+    this.setState({
+      todo: this.state.todo.filter((item) => {
+        return item.id !== this.state.idDelete;
+      }),
+      isDelete: false,
+    });
+  };
+  DontRemove = () => {
+    this.setState({
+      isDelete: false,
+    });
+  };
+
   ButtonAdd = (event) => {
     const id = this.state.todo.length;
     const newData = {
@@ -88,6 +104,7 @@ class App extends Component {
             <TodoList
               todo={this.state.todo}
               del={this.ButtonDelete}
+              remove={this.RemoveTask}
               edit={this.OpenModal}
             />
           </div>
@@ -106,6 +123,13 @@ class App extends Component {
               close={this.CloseModal}
               change={this.TaskOnChange}
               save={this.ButtonSave}
+            />
+          </div>
+          <div className="deletemodal">
+            <DeleteModal
+              isremove={this.state.isDelete}
+              remove={this.RemoveTask}
+              cancel={this.DontRemove}
             />
           </div>
         </div>

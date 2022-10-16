@@ -24,7 +24,7 @@ const Todo = ({ tugas, del, edit }) => {
   }
 };
 export default Todo;
-
+//() => delById(tugas.id)
 const TodoStyle = {
   background: "#218DFD",
   margin: "0.5rem 0",
